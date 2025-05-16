@@ -3,7 +3,10 @@ const video = document.getElementById('bgVideo');
 
 const videos = [
   'videos/emirates.mp4',
+  'videos/etihad.mp4',
   'videos/Wembley.mp4',
+  'videos/tottenham.mp4',
+  'videos/ManU.mp4'
 ];
 
 let current = 0;
