@@ -10,25 +10,29 @@
     <title>Premier League Team Facts</title>
 </head>
 <body>
-    <nav>
-        <ul class="searchBoxContainer">
-            <div class="searchBox">
-                <input class="searchInput" type="text" name="" placeholder="Search">
-                <button class="searchButton" href="#">
-                    <i class="material-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg> 
-                    </i>
-                </button>
-            </div>
-        </ul>
-    </nav>
-      
-    <div>this is it</div>
-      
+    <div class="topNav">
+        <div class="navCredit">
+            <p>Created by Jordan Lenhart</p>
+            <div class="socialIconsContainer">
+                <a><img class="socialIcons" src="images/github.png"></a>
+                <a><img class="socialIcons" src="images/linkedin.png"></a>
+                <a><img class="socialIcons" src="images/mail.png"></a>
+            </div>    
+        </div>
+        <a href="https://www.premierleague.com/" target="blank"><img src="/images/premierleague.png" height="200em"></a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit">Go</button>
+            </form>
+        </div>
+    </div>
+
+    <video id="bgVideo" muted autoplay></video>
+
+    <h2>2024-25 ENGLISH PREMIER LEAGUE TEAMS</h2>
+    <table id="table" ></table>
 </body>
-<script src="./src/script.js"></script>
+<script src="./src/main.js"></script>
 <script src="./src/fetch.js"></script>
 </html>

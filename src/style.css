@@ -4,71 +4,65 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: "Nunito", "Roboto", sans-serif;
+    color: #38003c;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5em;
 }
 
 
 /* Nav Bar and Contents */
-nav {
-    position: relative;
-    background-color: aqua;
+.topNav {
+    border: black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
 }
 
-.searchBoxContainer {
-    float: right;
+.navCredit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Search Box Styling and Functionality */
-.searchBox {
-    position: absolute;
-    left: 85%;
-    transform: translate(-50%,50%);
-    background: #2f3640;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-
+.socialIconsContainer {
+    display: flex;
+    gap: 1em;
 }
 
-.searchBox:hover > .searchInput {
-    width: 240px;
-    padding: 0 6px;
+.socialIcons {
+    height: 5em;
+    width: 5em;
 }
 
-.searchBox:hover > .searchButton {
-  background: white;
-  color : #2f3640;
-}
+/* Table Styling for content from API */
 
-.searchButton {
-    color: white;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    gap: 2em;
+  }
+
+  .cell {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
-}
+    border: 1px solid #ddd;
+    height: 30em;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: none;
+    margin: 1em;
+  }
 
-.searchInput {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+  .cell img {
+    max-width: 20em;
+    max-height: 20em;
+  }
 
-}
-
-@media screen and (max-width: 620px) {
-.searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-}
-}
