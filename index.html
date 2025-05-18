@@ -7,39 +7,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Premier League Team Facts</title>
+    <link rel="icon" type="image/x-icon" href="/images/premierleaguesecondaryicon.png">
+    <title>Premier League Display</title>
 </head>
 <body>
+    <!-- BACKGROUND CONTAINER DIV -->
     <div class="bgContainer">
-    <div class="topNav">
-        <div class="navCredit">
-            <div class="socialIconsContainer">
-                <a href="https://github.com/jordanlenhart"><img class="socialIcons" src="images/githubwhite.png"></a>
-                <a href="https://www.linkedin.com/in/jordanlenhart1/"><img class="socialIcons" src="images/linkedinwhite.png"></a>
-                <a href="mailto:jordinholenhart@gmail.com"><img class="socialIcons" src="images/mailwhite.png"></a>
-            </div>    
-            <p>Created by Jordan Lenhart</p>
-        </div>
-        <a href="https://www.premierleague.com/" target="blank"><img src="/images/premierleaguewhite.png" height="200em"></a>
-        <div class="searchContainer">
-            <div class="search">
-               <input type="text" class="searchTerm" placeholder="Search...">
-               <button type="submit" class="searchButton">
-                 <i class="fa fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                   </svg>   </i>
-              </button>
-            </div>
-        </div>
-    </div>
 
-    <video id="bgVideo" muted autoplay></video>
-    <div class="content">
-        <h2>2024-25 ENGLISH PREMIER LEAGUE TEAMS</h2>
-        <table id="table" ></table>
-    </div>
-    </div>
+        <!-- NAV BAR DIV -->
+        <div class="topNav">
+
+            <!-- CREDIT SECTION TOP LEFT -->
+            <div class="navCredit">
+                <div class="socialIconsContainer">
+                    <a href="https://github.com/jordanlenhart"><img class="socialIcons" src="images/githubwhite.png"></a>
+                    <a href="https://www.linkedin.com/in/jordanlenhart1/"><img class="socialIcons" src="images/linkedinwhite.png"></a>
+                    <a href="mailto:jordinholenhart@gmail.com"><img class="socialIcons" src="images/mailwhite.png"></a>
+                </div>    
+                <p>Created by Jordan Lenhart</p>
+            </div>
+
+            <!-- EPL LOGO WITH LINK TO OFFICIAL WEBSITE CENTER -->
+            <a href="https://www.premierleague.com/" target="blank"><img src="/images/premierleaguewhite.png" height="200em"></a>
+
+            <!-- SEARCH BAR TOP RIGHT -->
+            <div class="searchContainer">
+                <div class="search">
+                <input type="text" class="searchTerm" placeholder="Search...">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>   </i>
+                </button>
+                </div>
+            </div>
+
+        </div>  <!-- NAV BAR CLOSE -->
+
+        <!-- BACKGROUND VIDEO -->
+        <video id="bgVideo" muted autoplay></video>
+
+        <!-- CONTENT SECTION WITH TABLE, AUTOFILLED VIA FECTH.JS -->
+        <div class="content">
+            <h2>2024-25 ENGLISH PREMIER LEAGUE TEAMS</h2>
+            <table id="table" ></table>
+        </div>  <!-- CONTENT SECTION CLOSE -->
+
+    </div> <!-- BACKGROUND CONTAINER DIV CLOSE -->
+
 </body>
 <script src="./src/main.js"></script>
 <script src="./src/fetch.js"></script>
