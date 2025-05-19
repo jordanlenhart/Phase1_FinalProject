@@ -20,9 +20,9 @@
             <!-- CREDIT SECTION TOP LEFT -->
             <div class="navCredit">
                 <div class="socialIconsContainer">
-                    <a href="https://github.com/jordanlenhart"><img class="socialIcons" src="images/githubwhite.png"></a>
-                    <a href="https://www.linkedin.com/in/jordanlenhart1/"><img class="socialIcons" src="images/linkedinwhite.png"></a>
-                    <a href="mailto:jordinholenhart@gmail.com"><img class="socialIcons" src="images/mailwhite.png"></a>
+                    <a href="https://github.com/jordanlenhart"><img alt="GitHub" class="socialIcons" src="images/githubwhite.png"></a>
+                    <a href="https://www.linkedin.com/in/jordanlenhart1/"><img alt="LinkedIn" class="socialIcons" src="images/linkedinwhite.png"></a>
+                    <a href="mailto:jordinholenhart@gmail.com"><img alt="Mail" class="socialIcons" src="images/mailwhite.png"></a>
                 </div>    
                 <p>Created by Jordan Lenhart</p>
             </div>
@@ -53,6 +53,26 @@
             <h2>2024-25 ENGLISH PREMIER LEAGUE TEAMS</h2>
             <table id="table" ></table>
         </div>  <!-- CONTENT SECTION CLOSE -->
+
+        <!-- DIALOG BOX THAT OPENS WITH POPULATED INFO WHEN A TABLE CELL IS CLICKED -->
+        <dialog id="teamModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 id="teamNameTitle">Team Name</h3> 
+              <p id="yearFormed">Year Formed</p>
+              <p id="stadiumName">Stadium</p>
+              <p id="teamDescription">Description</p>
+
+              <div id="teamSocials" class="socialIconsContainer">
+                <a target="blank" id="teamWebsite"><img class="socialIcons" src="/images/linkicon.png"></a>
+                <a target="blank" id="teamTwitter"><img class="socialIcons" src="/images/twitter.png"></a>
+                <a target="blank" id="teamInstagram"><img class="socialIcons" src="/images/instagramcolor.png"></a>
+                <a target="blank" id="teamYoutube"><img class="socialIcons" src="/images/youtubecolor.png"></a>
+              </div>
+
+            </div>
+        </dialog>
+
 
     </div> <!-- BACKGROUND CONTAINER DIV CLOSE -->
 

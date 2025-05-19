@@ -44,6 +44,7 @@ h2 {
     width: 5em;
 }
 
+
 /* Search Button Styling and Animation */
 .search {
     width: 20em;
@@ -75,10 +76,11 @@ h2 {
     font-size: 20px;
   }
 
+
 /* Background Video Necessary Styling*/
 
 #bgVideo {
-    position: fixed;           /* Key part: fix to viewport */
+    position: fixed;
     top: 0;
     left: 0;
     min-width: 100vw;
@@ -94,6 +96,7 @@ h2 {
     z-index: 1;
     padding: 20px;
 }
+
 
 /* Table Styling for content from API */
 
@@ -126,4 +129,36 @@ h2 {
   .cell:hover {
     transform: scale(1.5);
     z-index: 10;
+  }
+
+
+  /* DIALOG STYLING AND ON CLICK EFFECTS */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 1em;
+    border-radius: 2.5vh;
+    width: 60em;
+    margin: 15% auto;
+    text-align: center;
+  }
+
+  .close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #teamSocials {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
   }
