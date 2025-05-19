@@ -1,4 +1,4 @@
-// JUST NAMING VARIABLES FOR EASE
+// JUST NAMING VARIABLES FOR EASE, TABLE AND DIALOG
 const table = document.getElementById('table');
 const teamAPI = 'https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League'
 
@@ -26,25 +26,32 @@ async function loadTeams() {
   try {
     const response = await fetch(teamAPI);
     
+    // IF THE FETCH DOES NOT WORK, THEN IT WILL THROW THE ERROR
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
+    // PARSE JSON FROM API AND CREATE ARRAY WITH LL 20 TEAMS
     const data = await response.json();
     const teams = data.teams.slice(0, 20);
 
+    // FOR EACH TEAM, WE WILL...
     teams.forEach(team => {
+
+      //  CREATE A DIV
       const cell = document.createElement('div');
       cell.className = 'cell';
 
+      // DISPLAY THE LOGO
       const img = document.createElement('img');
       img.src = team.strBadge;
       img.alt = team.strTeam;
 
+      // DISPLAY TEAM NAME
       const teamName = document.createElement('h3')
       teamName.textContent = team.strTeam;
 
-
+      // COMBINE ALL CHILD ELEMENTS TO FORM EACH CELL FOR EACH TEAM
       cell.appendChild(img);
       cell.appendChild(teamName);
       table.appendChild(cell);
@@ -86,6 +93,7 @@ async function loadTeams() {
 
     });
   } catch (error) {
+    // CATCH AND SHOW ERROR IF FETCH DOES NOT WORK
     console.error('Error fetching teams:', error);
   }
 }

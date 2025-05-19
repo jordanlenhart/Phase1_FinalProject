@@ -1,4 +1,4 @@
-// Video Functions
+// VIDEO ARRAY AND FUNCTION
 const video = document.getElementById('bgVideo');
 
 const videos = [
@@ -11,13 +11,14 @@ const videos = [
 
 let current = 0;
 
+// PLAY VIDEO
 function playVideo(index) {
   video.src = videos[index];
   video.load();
   video.play();
   fadeIn();
 
-  // When the video is about to end, fade out
+  // WHEN VIDEO IS CLOSE TO ENDING, FADE INTO THE NEXT VIDEO
   video.onended = () => {
     fadeOut(() => {
       current = (current + 1) % videos.length;
