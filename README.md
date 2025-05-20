@@ -6,6 +6,32 @@ A sleek web app that fetches and displays all 20 English Premier League teams us
 
 ---
 
+## 🔧 How to Run Locally (With Vite)
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/jordanlenhart/epl-teams-viewer.git
+cd epl-teams-viewer
+
+2. **Install dependencies**
+
+```bash
+npm install
+
+3. **Start the development server**
+
+```bash
+npm run dev
+
+4. **Open in your browser**
+After running the dev server, Vite will output a local URL such as:
+
+```arduino
+http://localhost:5173/
+
+Open that link in your browser to view the app!
+
 ## 🚀 Features
 
 - ✅ Fetches real-time EPL team data from [TheSportsDB API](https://www.thesportsdb.com/api.php)
