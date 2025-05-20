@@ -28,7 +28,6 @@ npm run dev
 ```
 
 4. **Open in your browser**
-
 After running the dev server, Vite will output a local URL such as:
 
 ```arduino
@@ -59,3 +58,9 @@ Open that link in your browser to view the app!
 - **Vite**
 - **Vanilla JavaScript (ES6+)**
 - **[TheSportsDB API](https://www.thesportsdb.com/api.php)**
+
+## 🙌 Credits
+🛠  Built by Jordan Lenhart  
+👩‍💻  Data from TheSportsDB.com  
+🖼  Icons from Iconify
+
