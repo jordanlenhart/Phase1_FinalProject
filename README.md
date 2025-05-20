@@ -28,6 +28,7 @@ npm run dev
 ```
 
 4. **Open in your browser**
+
 After running the dev server, Vite will output a local URL such as:
 
 ```arduino
