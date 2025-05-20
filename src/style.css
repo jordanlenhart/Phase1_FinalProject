@@ -169,6 +169,6 @@ cursor: pointer;
 
 #teamSocials {
 display: flex;
-gap: 1em;
+gap: 3em;
 justify-content: center;
 }
